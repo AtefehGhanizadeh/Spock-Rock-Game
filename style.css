@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(244, 244, 244);
+    font-family: Lato, sans-serif;
+}
+
+.container{
+    width: 550px;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 15px 20px rgb(166, 166, 166);
+    position: fixed;
+}
+.header-container{
+    background-color: rgb(44, 127, 209);
+    padding: 35px;
+    width: 100%;
+    text-align: center;
+}
+.header-container h1{
+    color: white;
+}
+
+.game-part{
+    width: 100%;
+    height: 492.4px;
+    max-height: 492.4px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.player-part{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.fa-regular{
+    font-size:50px;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.playerChoice,#playerChoice{
+    color: rgb(44, 127, 209);
+    cursor: pointer;
+}
+
+.computer,#computerChoice{
+    color: rgb(255, 0, 0);
+}
+.reset-icon{
+    font-size: 30px;
+    cursor: pointer;
+}
+.resault-container{
+    width:100%
+}
+.resault-text{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.selected{
+    color:black;
+}
+
+@media screen and (max-width:570px) {
+    .container{
+        width:95%;
+        height: 450px;
+        font-size: 9px;
+    }
+    .header-container{
+        padding: 20px;
+    }
+    .fa-regular{
+        font-size: 30px;
+    }
+    .resault-text{
+        font-size: 20px;
+    }
+    .reset-icon{
+        font-size: 20px;
+    }
+}
